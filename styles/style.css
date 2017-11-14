@@ -1,0 +1,70 @@
+body{
+  background: #AC8;
+  padding: 2em;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-weight:bolder;
+  -webkit-transition: all 2.5s; /* For Safari 3.1 to 6.0 */
+  transition: all 2.5s;
+}
+
+h1{
+  color:#727272;
+}
+
+.miniBox {
+  height:150px;
+}
+
+.viewFav {
+  margin-top:10%; 
+  font-size:1em; 
+  font-weight:bold;
+}
+
+.bordered {
+  cursor: pointer;
+  color: #234;
+  display: inline-block;
+  font-size: 3em;
+  padding: 1em;
+  background: white;
+  background-clip: padding-box;
+  border: 4px dotted white;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 2.5s; /* For Safari 3.1 to 6.0 */
+  transition: all 2.5s;
+}
+
+.bordered:before, .bordered:after {
+  border: inherit;
+  border-width: 2px;
+  content: '';
+  left: -6px;
+  right: -6px;
+  top: -6px;
+  bottom: -6px;
+  position: absolute;
+  z-index: -1;
+}
+
+.bordered:after {
+  border-width: 1px;
+  border-radius: 4px;
+  left: -7px;
+  right: -7px;
+  top: -7px;
+  bottom: -7px;
+}
+
+.favBox {
+  display: flex;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background-color: white;
+  z-index: 9;
+}
